@@ -2,15 +2,15 @@
 # lab10
 Lab 10: Graphs
 
-Name: <Your Name Goes Here>
+Name: Jacob Pellechia
 
 Lab Instructions: [https://cs.oberlin.edu/~cs151/lab-10/](https://cs.oberlin.edu/~cs151/lab-10/)
 
 ## Questions
 
 1. Did you collaborate with anyone on the warmup?  If so, whom did you collaborate with?
-
+Nobody.
 2. How much time do you think you spent on this lab?
-
+4-5 Hours.
 3. Did you follow the Honor Code?
-
+Yes.
