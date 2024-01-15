@@ -1,0 +1,38 @@
+FWGC|, WC|GF, WGC|F, GC|WF, WG|CF, FC|WG, C|WGF, FWG|G, W|GCF, FW|GC, FGC|W, FWG|C, G|WCF, FG|WC, |WGCF, Failure
+
+(FWGC|, GC|WF) (FWGC, WC|GF) (FWGC|, WGC|F) (FWGC|, WG|CF) (Failure, WGC|F) (Failure, WG|CF) (Failure, GC|WF) (Failure, WC|GF) (Failure, FW|GC) (Failure, FC|WG) (GC|WF, FGC|W) (WC|GF, FWG|G) (WG|CF, FWG|F) (FC|WG, C|WGF) (C|WGF, FWC|G) (FWC|G, W|GCF) (W|GCF, FW|GC) (FGC|W, G|WCF) (FWG|C, G|WCF) (G|WCF, FG|WC) (FG|WC, |WGCF)
+
+FWGC|: GC|WF, WC|GF, WGC|F, WG|CF, FGC|W
+GC|WF: FWGC, Failure, FGC|W
+WC|GF: FWGC, Failure, FWG|G
+WGC|F: Failure, FWGC|
+WG|CF: FWGC|, Failure, FWG|F
+Failure: WGC|F, WG|CF, GC|WF, WC|GF, FW|GC, FC|WG, 
+FW|GC: Failure, W|GCF
+W|GCF: FWC|G, FW|GC
+FC|WG: Failure, C|WGF, 
+C|WGF: FC|WG, FWC|G, 
+FWC|G: C|WGF, W|GCF, 
+FGC|W: GC|WF, G|WCF, 
+G|WCF: FGC|W, FWG|C, FG|WC
+FWG|C: G|WCF
+FG|WC: G|WCF, |WGCF
+|WGCF: FG|WC
+
+        FWGC|, WC|GF, WGC|F, GC|WF, WG|CF, FC|WG, C|WGF, FWG|G, W|GCF, FW|GC, FGC|W, FWG|C, G|WCF, FG|WC, |WGCF, Failure, FWC|G
+FWGC|:                  1      1      1                                         1
+GC|WF:    1                                                                     1                                   1
+WC|GF:    1,                                               1                                                        1
+WGC|F:    1                                                                                                         1
+WG|CF:    1,                                                                                                1       1
+Failure:         1       1,     1      1,     1                           1
+FW|GC:                                                            1                                                 1
+W|GCF:                                                                    1                                                 1 
+FC|WG:                                              1                                                               1
+C|WGF:                                        1                                                                             1 
+FWC|G:                                              1             1 
+FGC|W:                          1                                                             1
+G|WCF:                                                                          1      1             1
+FWG|C:                                                                                        1
+FG|WC:                                                                                        1             1
+|WGCF:                                                                                               1
